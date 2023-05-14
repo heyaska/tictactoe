@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {background-color: powderblue;}
+        h1   {color:red;}
+        p    {color: red;}
+        .tile {
+            width: 100px; 
+            height: 100px; 
+            background-color: transparent; 
+            /* margin: 3px;  */
+            border: 2px solid;
+            /* display: inline-block */
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .row {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="tic-tac-toe">
+        <h1 style="color:green;">this is h1</h1>
+        <div id="title">TIC TAC TOE</div>
+        <button onclick="resetButton()">Reset</button>
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <!-- add winner message -->
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
